@@ -87,3 +87,6 @@ html {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.content {
+  z-index: 1;
+}
