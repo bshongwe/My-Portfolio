@@ -8,7 +8,7 @@ box-sizing: border-box;
 .hero {
 height: 100vh;
 width: 100%;
-background-image: url(Portfolio Pic 1.jpg);
+background-image: url(Portfolio Background.jpg);
 background-size: cover;
 background-position: center;
 }
