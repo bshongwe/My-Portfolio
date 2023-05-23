@@ -42,41 +42,44 @@
             <div class="dropdown-content">
               <ul>
                 <li class="dropdown">
-                  <a href="#">Projects</a>
-                  <div class="dropdown-content">
-                    <ul>
-                      <li class="dropdown">
-                          <ul>
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
-                            <li><a href="#">Project 4</a></li>
-                            <li><a href="#">Project 5</a></li>
-                            <li><a href="#">Project 6</a></li>
-                            <li><a href="#">Project 7</a></li>
-                          </ul>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                    <li><a href="#">Project 4</a></li>
+                    <li><a href="#">Project 5</a></li>
+                    <li><a href="#">Project 6</a></li>
+                    <li><a href="#">Project 7</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </li>
           <li class="dropdown">
-            <a href="#">Contact Us</a>
+            <a href="#">Blog & Articles</a>
+            <div class="dropdown-content">
+              <a href="#">B&A 1</a>
+              <a href="#">B&A 2</a>
+              <a href="#">B&A 3</a>
+              
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Contact Me</a>
             <div class="dropdown-content">
               <a href="https://github.com/bshongwe"><i class="fab fa-github"></i>GitHub</a>
               <a href="https://www.linkedin.com/in/ernest-shongwe-31138b8b/"><i class="fab fa-linkedin"></i>LinkedIn</a>
               <a href="https://www.yahoomail.com"><i class="fab fa-yahoo"></i>Yahoo</a> <!---I NEED TO FIX THIS--->
+              <a href="https://zoom.us"><i class="fab fa-zoom"></i>Zoom</a> <!---I NEED TO FIX THIS--->
             </div>
           </li>
         </ul>
-        <a href="#" class="btn">Donate</a>
+        <a href="#" class="btn">Hire Me</a>
       </nav>
       
       <div class="content">
         <h4>Hello. My name is</h4>
-        <h1>Ernest Bhekizwe Shongwe.</h1>
+        <h1 id="typewriter">Ernest Bhekizwe Shongwe.</h1>
         <h3>I'm a Software Developer.</h3>
         <div class="newsletter">News Letter
           <form>
@@ -88,5 +91,19 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+      const typewriterText = "Ernest Bhekizwe Shongwe."; // Text to animate
+      const typewriterElement = document.getElementById('typewriter');
+      let charIndex = 0;
+
+      function typeWriter() {
+        if (charIndex < typewriterText.length) {
+          typewriterElement.textContent += typewriterText.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, 100); // Adjust typing speed here (in milliseconds)
+        }
+      }
+
+      typeWriter();
   </body>
 </html>
