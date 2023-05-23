@@ -14,9 +14,18 @@
       .hero {
         background-image: url('Portfolio Background.jpg');
       }
-      .dropdown:hover .dropdown-content {
-        display: block;
+      .dropdown {
+      position: relative;
+    }
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      padding: 8px;
       }
+      
     </style>
     
   </head>
