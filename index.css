@@ -143,15 +143,3 @@ html, body {
     margin-bottom: 20px;
   }
 }
-  .content {
-    position: static;
-    transform: none;
-    text-align: center;
-  }
-
-  .avatar {
-    position: static;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
