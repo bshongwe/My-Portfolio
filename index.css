@@ -112,3 +112,13 @@ html, body {
   z-index: 1;
   color: white;
 }
+.avatar {
+  position: absolute;
+  top: -270px;
+  left: 50px;
+  width: 210px;
+  height: 225px;
+  border-radius: 50%;
+  border: 2px solid black;
+  z-index: 2;
+}
