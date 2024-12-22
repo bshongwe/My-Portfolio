@@ -1,99 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ernest Bhekizwe Shongwe's portfolio showcasing software development projects, blogs, and articles. Specializing in JSDSA, MEAN/MERN stack, and QA.">
+    <meta name="keywords" content="Portfolio, Software Developer, JSDSA, MEAN, MERN, QA, Projects, Ernest Shongwe">
+    <meta name="author" content="Ernest Bhekizwe Shongwe">
     
+    <title>Portfolio Website - Ernest Bhekizwe Shongwe</title>
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
       .hero {
         background-image: url('Portfolio Background.jpg');
+        background-size: cover;
+        background-position: center;
       }
       .dropdown {
-      position: relative;
-    }
-      .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #f9f9f9;
-      padding: 8px;
+        position: relative;
       }
-      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f9f9f9;
+        padding: 8px;
+      }
     </style>
-    
   </head>
   <body>
-    <!---Hero---Beginning--->
+    <!-- Hero Section -->
     <div class="hero">
       <nav>
-        <h2 class="logo">Port<span>folio</span></h2>
+        <h1 class="logo">Port<span>folio</span></h1>
         <ul>
           <li><a href="#">Home</a></li>
-          
-          <li><a href="#">About Me</a></li>
-          
+          <li><a href="#about">About Me</a></li>
           <li class="dropdown">
             <a href="#">Projects</a>
             <div class="dropdown-content">
               <ul>
-                <li class="dropdown">
-                  <ul>
-                    <li><a href="https://bshongwe.github.io/Login-Form/">Login_Form</a></li>
-                    <li><a href="https://bshongwe.github.io/QR-Code-Generator/">QR_Code_Generator</a></li>
-                    <li><a href="https://github.com/bshongwe/FCC-Cert-Project-Sudoku-Solver">Sudoku_Solver</a></li>
-                    <li><a href="https://github.com/bshongwe/FCC-QA-Cert-Proj-Metric-Convert">Metric_Converter</a></li>
-                    <li><a href="https://github.com/bshongwe/FCC-Random-Quote-Machine">Random_Quote_Machine</a></li>
-                    <li><a href="https://github.com/bshongwe/FCC-Mocha-Chai-Cert-Project">Mocha_Chai</a></li>
-                  </ul>
-                </li>
+                <li><a href="https://bshongwe.github.io/Login-Form/">Login Form</a></li>
+                <li><a href="https://bshongwe.github.io/QR-Code-Generator/">QR Code Generator</a></li>
+                <li><a href="https://github.com/bshongwe/FCC-Cert-Project-Sudoku-Solver">Sudoku Solver</a></li>
+                <li><a href="https://github.com/bshongwe/FCC-QA-Cert-Proj-Metric-Convert">Metric Converter</a></li>
+                <li><a href="https://github.com/bshongwe/FCC-Random-Quote-Machine">Random Quote Machine</a></li>
+                <li><a href="https://github.com/bshongwe/FCC-Mocha-Chai-Cert-Project">Mocha Chai</a></li>
               </ul>
             </div>
           </li>
-          
-          <li class="dropdown">
-            <a href="#">Blog & Articles</a>
-            <div class="dropdown-content">
-              <a href="#">B&A 1</a>
-              <a href="#">B&A 2</a>
-              <a href="#">B&A 3</a>
-            </div>
-          </li>
-          
-          <li class="dropdown">
-            <a href="#">Contact Me</a>
-            <div class="dropdown-content">
-              <a href="https://github.com/bshongwe"><i class="fab fa-github"></i>GitHub</a>
-              <a href="https://www.linkedin.com/in/ernest-shongwe-31138b8b/"><i class="fab fa-linkedin"></i>LinkedIn</a>
-              <a href="shongwe.bhekizwe@yahoomail.com"><i class="fab fa-yahoo"></i>Yahoo</a>
-              <a href="https://us05web.zoom.us/"><i class="fab fa-zoom"></i>Zoom</a> <!---I NEED TO FIX THIS--->
-            </div>
-          </li>
+          <li><a href="#blog">Blog & Articles</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
-        
-        <a href="#" class="btn">Hire Me</a>
+        <a href="#contact" class="btn">Hire Me</a>
       </nav>
       
       <div class="content">
-      	<img src="Portfolio Pic 2.jpg" alt="Avatar" class="avatar">
-        <h4>Hello. My name is</h4>
+        <img src="Portfolio Pic 2.jpg" alt="Portrait of Ernest Bhekizwe Shongwe" class="avatar">
+        <h2>Hello, my name is</h2>
         <h1>Ernest Bhekizwe Shongwe</h1>
         <h3>I'm a Software Developer.</h3>
-        <p><span>JSDSA | MEAN/ MERN Stack | QA</span></p>
-        <div class="newsletter"><br>News Letter
+        <p><strong>Specialized in:</strong> <span>JSDSA | MEAN/MERN Stack | QA</span></p>
+        <div class="newsletter">
+          <h4>Subscribe to my newsletter</h4>
           <form>
-            <input type="email" name="email" id="email" placeholder="john.doe@email.com">
-            <input type="submit" name="submit" value="Subscribe">
+            <label for="email" hidden>Email:</label>
+            <input type="email" name="email" id="email" placeholder="john.doe@email.com" required>
+            <input type="submit" value="Subscribe">
           </form>
         </div>
       </div>
+    </div>
     
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 Ernest Bhekizwe Shongwe. All rights reserved.</p>
+    </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   </body>
